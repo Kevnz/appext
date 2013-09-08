@@ -1,7 +1,7 @@
 YUI().use('first-app', 'second-app', 'app-extend', 'simple-view', function (Y) {
-        // body...
+    Y.log(Y.App);
 
-  Y.MainApp = Y.AppExtend.create('mainApp', Y.App, [Y.FirstApp, Y.SecondApp], {
+  Y.MainApp = Y.App.create('mainApp', Y.App, [Y.FirstApp, Y.SecondApp], {
     views: {
         main: {
             type: Y.SimpleView
