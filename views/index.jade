@@ -1,0 +1,12 @@
+extends layout
+
+block content
+   .header.pure-u-1
+       h1.pure-u-1= title
+       h2.pure-u Kickstarted app
+    .content
+        p Welcome to #{title}
+        #app
+    script#main-template(type='text/template')
+        .first.pure-button First
+        .second.pure-button Second
